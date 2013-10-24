@@ -10,8 +10,10 @@ namespace linq_formatting
     {
         static void Main(string[] args)
         {
+            // this sample app uses the default auto-formatting option
             var foo = new Foo();
             var result = foo.Bars
+                // why is OrderBy outdented here?  
         .OrderBy(s => s.Baz)
             .Select(s => s.Baz);
 
